@@ -1,0 +1,63 @@
+body{
+    background-color: rgba(201, 217, 243, 0.546);
+
+}
+
+h1{color: rgb(31, 4, 4);
+    font-size: 40px;
+    font-style: oblique;
+}
+
+p{
+    color: rgb(165, 92, 92);
+    font-size: 20px;
+    font-style: oblique;
+
+text-decoration: navy;
+
+color:rgba(63, 1, 76, 0.934)
+}
+
+h2{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.about{
+    color: rgb(31, 11, 11);
+    font-size: 20px;
+    text-decoration: none;
+}   
+
+
+.card-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+
+
+
+
+}
+.card{
+    width:300px
+    padding: 24px;px
+    margin:16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+   background-color: rgba(300, 255, 255, 0.8);
+
+   transition:transform 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+.card:hover{
+    display:inline-block;
+    padding:20px;
+    transform: translateY(-10px);
+    box-shadow: 0 20px 10px rgba(32, 19, 220, 0.449);
+
+}
+
+

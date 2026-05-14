@@ -1,53 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">   
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The ESL Voice | Empowering ESL Learners in New Haven</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
 </head>
-
 <body>
 
-    <header>
+  <!-- ===== HEADER / NAV ===== -->
+  <header id="top">
+    <div class="header-inner">
+      <div class="logo-group">
+        <div class="logo-icon">ESL</div>
+        <span class="logo-text">The ESL Voice</span>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#impact">Impact</a>
+        <a href="#research">Research</a>
+        <a href="#volunteer">Volunteer</a>
+        <a href="#programs">Programs</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-cta" onclick="document.getElementById('volunteer').scrollIntoView({behavior:'smooth'})">Join Us</button>
+    </div>
+  </header>
 
-        <h1>Voices ESL</h1>
-    </header>
+  <main>
 
-    <main class="card-grid">
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero-bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+      <div class="hero-content">
+        <span class="hero-eyebrow">New Haven, CT</span>
+        <h1 class="hero-title">Empowering<br><em>ESL Learners</em><br>in New Haven</h1>
+        <p class="hero-sub">Connecting bilingual tutors with ESL programs to break down language barriers and build stronger communities.</p>
+        <div class="hero-buttons">
+          <a href="#volunteer" class="btn btn-primary">Become a Tutor</a>
+          <a href="#programs" class="btn btn-secondary">Find a Program</a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">500+</span>
+          <span class="stat-label">Learners Supported</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">12+</span>
+          <span class="stat-label">Partner Programs</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">40+</span>
+          <span class="stat-label">Bilingual Tutors</span>
+        </div>
+      </div>
+    </section>
 
-<section class="card">
-    <h2>What is ESL?</h2>
-    <p>ESL stands for English as a Second Language. It refers to the teaching and learning of English by non-native speakers. ESL programs are designed to help individuals improve their English language skills for various purposes, such as communication, education, and employment.</p>
-<h2 class="about">Benefits of ESL Learning</h2>
-<ul>
-    <li>Improved communication skills</li>
-    <li>Better job opportunities</li>
-    <li>Enhanced cultural understanding</li>
-    <li>Increased confidence in using English</li>
-    <p><a href="https://www.voicesesl.com/">Learn more about Voices ESL</a> Explore our website for resources, courses, and support to help you on your ESL learning journey.</p>
-</ul> 
+    <!-- ===== ABOUT / MISSION & STORY ===== -->
+    <section id="about" class="section about-section">
+      <div class="section-label">Who We Are</div>
+      <div class="card-grid two-col">
 
-</section class="card">
-<section class="card">
-    <h2 class="card">ESL Resources</h2>
+        <div class="card card-accent">
+          <div class="card-icon">🎯</div>
+          <h2>Our Mission</h2>
+          <p>Our mission is to address the shortage of ESL tutors in New Haven by promoting the importance of ESL education and connecting learners with local bilingual support.</p>
+        </div>
 
-    <form>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-        <button type="submit">Subscribe</button>
-    </form>
-    <p>We offer a variety of resources to support your ESL learning, including:</p>
-    <ul>
-        <li>Online courses</li>
-        <li>Interactive exercises</li>
-        <li>Language exchange programs</li>
-        <li>Community forums</li>
-    </ul>
-    <p>Visit our <a href="https://www.voicesesl.com/resources">Resources page</a> to access these materials and enhance your English language skills.</p>
-</section class="card">
-<img src="Ricardo Salinas.png" alt="ESL Voices" class="esl-image" width="200px", height="200px">
+        <div class="card">
+          <div class="card-icon">📖</div>
+          <h2>Our Story</h2>
+          <p>I was once an ESL learner in New Haven. Though I graduated from the program, I continued to face challenges with English. With support from New Haven Reads, I improved my literacy skills and began helping others — including translating lessons for new students.</p>
+          <p>Experiencing firsthand the difficulties families face when finding available ESL programs inspired me to create this website and recruit bilingual tutors to support our community.</p>
+        </div>
 
-    </main>
+        <div class="card">
+          <div class="card-icon">💬</div>
+          <h2>What is ESL?</h2>
+          <p>ESL stands for <strong>English as a Second Language</strong>. It refers to the teaching and learning of English by non-native speakers. ESL programs help individuals improve their English for communication, education, and employment.</p>
+          <h3 class="sub-heading">Benefits of ESL Learning</h3>
+          <ul class="styled-list">
+            <li>Improved communication skills</li>
+            <li>Better job opportunities</li>
+            <li>Enhanced cultural understanding</li>
+            <li>Increased confidence in English</li>
+          </ul>
+        </div>
+
+        <div class="card card-dark">
+          <div class="card-icon">🌐</div>
+          <h2>ESL Resources</h2>
+          <p>We offer a variety of resources to support ESL learning:</p>
+          <ul class="styled-list light">
+            <li>Online courses</li>
+            <li>Interactive exercises</li>
+            <li>Language exchange programs</li>
+            <li>Community forums</li>
+          </ul>
+          <p>Visit <a href="https://www.voicesesl.com/resources" class="inline-link" target="_blank">VoicesESL.com</a> for more.</p>
+          <div class="subscribe-form">
+            <label for="email">Stay updated:</label>
+            <div class="input-row">
+              <input type="email" id="email" name="email" placeholder="your@email.com" />
+              <button type="button" id="subscribeBtn">Subscribe</button>
+            </div>
+            <p class="form-msg" id="formMsg"></p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== IMPACT ===== -->
+    <section id="impact" class="section impact-section">
+      <div class="section-label">What We Do</div>
+      <h2 class="section-title">Our Impact</h2>
+      <p class="section-sub">Making a real difference in New Haven</p>
+
+      <div class="card-grid three-col">
+        <div class="card impact-card">
+          <div class="impact-icon">🤝</div>
+          <h3>Connect Tutors &amp; Learners</h3>
+          <p>We match bilingual tutors with various ESL programs — both online and in-person — across the New Haven area.</p>
+        </div>
+        <div class="card impact-card">
+          <div class="impact-icon">📚</div>
+          <h3>Better Learning</h3>
+          <p>We create learning environments where students can better understand lessons, assignments, and everyday communication.</p>
+        </div>
+        <div class="card impact-card">
+          <div class="impact-icon">🌍</div>
+          <h3>Cultural Connections</h3>
+          <p>ESL students are connected with tutors who understand their language, culture, and unique learning experience.</p>
+        </div>
+      </div>
+
+      <div class="highlight-banner">
+        <p>By creating opportunities for ESL programs to recruit bilingual tutors, this project helps reduce language barriers and supports ESL learners throughout the New Haven community.</p>
+      </div>
+    </section>
+
+    <!-- ===== RESEARCH ===== -->
+    <section id="research" class="section research-section">
+      <div class="section-label">The Data</div>
+      <h2 class="section-title">Research Findings</h2>
+      <p class="section-sub highlight-text">This is a statewide — and nationwide — issue.</p>
+      <p class="intro-text">Several school districts are impacted by the increasing demand for tutors as ESL learner populations grow. There is a rapidly increasing number of immigrants arriving in New Haven, CT from Latin America and African countries.</p>
+
+      <div class="card-grid two-col">
+        <div class="card stat-card">
+          <h3>Texas</h3>
+          <div class="stat-number">60,000</div>
+          <p class="stat-label-text">Students needing tutors — up from an estimated 1,000 pre-pandemic</p>
+          <blockquote>"Before the pandemic, four local organizations served the tutoring needs of an estimated 1,000 students. Now we're facing numbers in the 50,000 to 60,000 range — five times more than what we were planning even six months ago."</blockquote>
+          <p class="attribution">— Derek Little, Deputy Chief of Teaching and Learning</p>
+        </div>
+
+        <div class="card stat-card">
+          <h3>California</h3>
+          <div class="stat-number">64%</div>
+          <p class="stat-label-text">Of 22,000 students in Hacienda La Puente USD are ESL learners</p>
+          <blockquote>"In the Hacienda La Puente Unified School District, 64% of the 22,000-student population are ESL learners."</blockquote>
+          <p class="attribution">— Wendy Maestas-Padilla</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== VOLUNTEER ===== -->
+    <section id="volunteer" class="section volunteer-section">
+      <div class="section-label">Get Involved</div>
+      <h2 class="section-title">Become a Tutor</h2>
+      <p class="section-sub">Bilingual? Help your community grow.</p>
+      <div class="card-grid three-col">
+        <div class="card step-card">
+          <div class="step-num">01</div>
+          <h3>Sign Up</h3>
+          <p>Register your interest and tell us about your language skills and availability.</p>
+        </div>
+        <div class="card step-card">
+          <div class="step-num">02</div>
+          <h3>Get Matched</h3>
+          <p>We'll connect you with a local ESL program that fits your schedule and language skills.</p>
+        </div>
+        <div class="card step-card">
+          <div class="step-num">03</div>
+          <h3>Start Tutoring</h3>
+          <p>Begin making a difference in the life of an ESL learner in your community.</p>
+        </div>
+      </div>
+      <div class="cta-center">
+        <a href="mailto:contact@eslvoice.org" class="btn btn-primary">Get Started Today</a>
+      </div>
+    </section>
+
+    <!-- ===== PROGRAMS ===== -->
+    <section id="programs" class="section programs-section">
+      <div class="section-label">Where to Learn</div>
+      <h2 class="section-title">ESL Programs in New Haven</h2>
+      <p class="section-sub">Find the program that's right for you.</p>
+      <div class="card-grid three-col">
+        <div class="card program-card">
+          <div class="program-tag">In-Person</div>
+          <h3>New Haven Reads</h3>
+          <p>A community-based literacy organization providing one-on-one tutoring for adults and children.</p>
+          <a href="https://newhavenreads.org" target="_blank" class="btn btn-outline">Learn More</a>
+        </div>
+        <div class="card program-card">
+          <div class="program-tag">Hybrid</div>
+          <h3>Adult Education</h3>
+          <p>New Haven Adult &amp; Continuing Education offers free ESL classes for adult learners at all levels.</p>
+          <a href="https://www.nhps.net/ACE" target="_blank" class="btn btn-outline">Learn More</a>
+        </div>
+        <div class="card program-card">
+          <div class="program-tag">Online</div>
+          <h3>Voices ESL</h3>
+          <p>Resources, courses, and community support to help you on your ESL journey from anywhere.</p>
+          <a href="https://www.voicesesl.com/" target="_blank" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section contact-section">
+      <div class="section-label">Reach Out</div>
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-sub">Have questions? We'd love to hear from you.</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <span>New Haven, Connecticut</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <a href="mailto:contact@eslvoice.org" class="inline-link">contact@eslvoice.org</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🌐</span>
+            <a href="https://www.voicesesl.com/" target="_blank" class="inline-link">voicesesl.com</a>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <input type="text" id="contactName" placeholder="Your Name" />
+          <input type="email" id="contactEmail" placeholder="Your Email" />
+          <textarea id="contactMsg" rows="4" placeholder="Your message..."></textarea>
+          <button type="button" id="contactSubmit" class="btn btn-primary">Send Message</button>
+          <p class="form-msg" id="contactFormMsg"></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <div class="logo-icon small">ESL</div>
+        <span>The ESL Voice</span>
+      </div>
+      <p class="footer-tagline">Breaking barriers. Building community. One word at a time.</p>
+      <nav class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#impact">Impact</a>
+        <a href="#research">Research</a>
+        <a href="#volunteer">Volunteer</a>
+        <a href="#programs">Programs</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer-copy">&copy; 2025 The ESL Voice &middot; New Haven, CT</p>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+
+  <script src="script.js"></script>
 </body>
 </html>
